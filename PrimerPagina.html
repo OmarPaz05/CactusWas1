@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" href="Style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Images/CactusIcon.png">
+    <title>Cactus Wasi </title>
+</head>
+<header>
+<div class="redes">
+
+    <a href="https://www.instagram.com/" target="_blank">
+        <img class="redes-icono" src="Images/instagram.png" alt="Instagram">
+        Instagram
+    </a>
+
+    <a href="https://wa.me/51933917090" target="_blank">
+        <img class="redes-icono" src="Images/Whatsapp.png" alt="WhatsApp">
+        933 917 090
+    </a>
+
+    <a href="https://www.facebook.com/doris.suculentas" target="_blank">
+        <img class="redes-icono" src="Images/facebook.png" alt="Facebook">
+        Facebook
+    </a>
+
+</div>
+<div class="Titulo">
+    <img src="Images/CactusIcon.png" alt="Logo de Flora y Jardín" width="60">
+    <h1>Cactus Wasi</h1>
+    <p>Flores que expresan, plantas que inspiran</p>
+</div>
+
+
+
+</header>
+<nav class="Menu">
+
+    <a href="#nosotros">¿Quiénes somos?</a>
+    <a href="#productos">Productos disponibles</a>
+    <a href="#crear-arreglo">Crea tu arreglo</a>
+    <a href="#pedidos">Pedidos y entregas</a>
+    <a href="#ayuda">Ayuda y contacto</a>
+
+</nav>
+
+<main>
+    <section id="nosotros">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos una floristería dedicada a crear arreglos florales y ofrecer plantas.</p>
+    </section>
+
+    <section id="productos">
+        <h2>Productos disponibles</h2>
+    </section>
+
+    <section id="crear-arreglo">
+        <h2>Crea tu arreglo</h2>
+    </section>
+
+    <section id="pedidos">
+        <h2>Pedidos y entregas</h2>
+    </section>
+
+    <section id="ayuda">
+        <h2>Ayuda y contacto</h2>
+    </section>
+</main>
+
+<body>
+<script>
+    const enlaces = document.querySelectorAll('.Menu a');
+
+    enlaces.forEach(enlace => {
+        enlace.addEventListener('click', () => {
+            enlaces.forEach(item => {
+                item.classList.remove('seleccionado');
+            });
+
+            enlace.classList.add('seleccionado');
+        });
+    });
+</script>
+</body>
+
+<footer>
+
+</footer>
+
+</html>

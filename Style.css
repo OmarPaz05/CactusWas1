@@ -1,0 +1,113 @@
+
+
+header 
+{
+    background-color: #354B38;
+    color: #F8F5EF;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding:10px;
+    text-align: center;
+    
+}
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(8px, 2vw, 20px);
+    flex-wrap: wrap;
+}
+
+.redes a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: rgb(206, 243, 194);
+    text-decoration: none;
+    font-size: clamp(12px, 1.2vw, 16px);
+}
+
+.redes-icono {
+    width: clamp(20px, 2.5vw, 35px);
+    height: auto;
+}
+
+.Titulo h1 
+{
+    color:aquamarine ;
+}
+.Titulo p
+{
+    color: cadetblue;
+} 
+
+.Menu {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    background-color: #354B38;
+
+    gap: 0;
+}
+
+/* Cada enlace ocupa una quinta parte */
+.Menu a {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 18px 8px;
+    box-sizing: border-box;
+
+    color: #F8F5EF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+
+    /* Prepara la animación */
+    background-color:  #354B38,;
+    background-size: 300% 300%;
+    background-position: 100% 50%;
+
+    transition:
+        background-position 0.5s ease,
+        color 0.4s ease;
+}
+.Menu a:active {
+    background-position: 0% 50%;
+    color: white;
+}
+.Menu a.seleccionado {
+    background-position: 0% 50%;
+    background-color: #5a6847;
+    color: white;
+}
+/* Efecto al pasar el mouse */
+.Menu a:hover {
+    background-position: 0% 50%;
+    background-color:  #96af76;
+    color: white;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+    .menu {
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        flex: 1 1 33.33%;
+        font-size: 13px;
+        padding: 14px 6px;
+    }
+}
+body {
+    background-color: #F8F5EF;
+    color: #354B38;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
